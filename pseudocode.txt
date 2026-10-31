@@ -1,0 +1,49 @@
+BEGIN
+	Define <Student> as a class.
+	
+	Define <get_letter_grade> as a function.
+		When called with parameter <grade>, do:
+			If <grade> is higher or equal to 90, return "AA".
+			Otherwise, if <grade> is higher or equal to 85, return "BA".
+			Otherwise, if <grade> is higher or equal to 80, return "BB".
+			Otherwise, if <grade> is higher or equal to 75, return "CB".
+			Otherwise, if <grade> is higher or equal to 65, return "CC".
+			Otherwise, if <grade> is higher or equal to 58, return "DC".
+			Otherwise, if <grade> is higher or equal to 50, return "DD".
+			Otherwise, if <grade> is higher or equal to 40, return "FD".
+			Otherwise, return "FF".
+
+	Define <get_random_grade> as a function.
+		When called, do:
+			Get a random percentage.
+			If percentage is in range [80, 100], return a random number in range [80, 100].
+			Otherwise, if percentage is in range [30, 80), return a random number in range [50, 80).
+			Otherwise, return a random number in range [0, 50).
+			
+	Ask and save weights of every grade, alongside with in-year and end-year weights.
+	Ask and save student count as <student_count>.
+	
+	Create a list labeled <student_list> containing <Student> object with lenght of <student_count>.
+	
+	For each <student> in <student_list> do:
+		Set name of the <student> to a random name.
+		Set each grade value of <student> to the result of <get_random_grade>.
+		Set in-year average of <student> to the weighted average of in-year grades.
+		Set final average of <student> to the weighted average of in-year and end-year grades.
+		Set letter grade of <student> to the result of <get_letter_grade> with parameter <grade> passed as the final average.
+		Print <student> with all of its properties.
+	
+	Print average of all students by using their final averages.
+	Print standard deviation all students by using their final averages and average of all students.
+	Print the maximum final average in all students by using their final averages.
+	Print the minimum final average in all students by using their final averages.
+	Print the number of students which have letter grade "AA".
+	Print the number of students which have letter grade "BA".
+	Print the number of students which have letter grade "BB".
+	Print the number of students which have letter grade "CB".
+	Print the number of students which have letter grade "CC".
+	Print the number of students which have letter grade "DC".
+	Print the number of students which have letter grade "DD".
+	Print the number of students which have letter grade "FD".
+	Print the number of students which have letter grade "FF".
+END
